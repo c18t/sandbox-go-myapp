@@ -7,6 +7,13 @@ $ go get github.com/c18t/sandbox-go-myapp/cmd/fizzbuzz_go
 $ fizzbuzz_go --help
 ```
 
+## License
+[WTFPL](./LICENSE)
+
+## Author
+Uchi (/ɯ̹t͡ɕʲi/)
+  - Twitter: [@c18t](https://twitter.com/c18t)
+
 ## Project Making
 ```
 $ gitignore code node go gitbook windows macos
