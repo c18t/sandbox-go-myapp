@@ -61,3 +61,32 @@ func TestFunc3(t *testing.T) {
 `go get <package_repos>`でソースのダウンロードと`go install`が実行される。
 
 このプロジェクトを例にすると、`go get github.com/c18t/sandbox-go-myapp/cmd/fizzbuzz_go`で `fizzbuzz_go`  コマンドがインストールされる。
+
+## 継続的インテグレーション＆カバレッジ測定
+`.travis.yml`を下記のように記述する。
+```yml
+language: go
+sudo: false
+go:
+  - tip
+before_install:
+  - go get github.com/golang/dep/cmd/dep
+  - go get github.com/mattn/goveralls
+  - go get golang.org/x/tools/cmd/cover
+install:
+  - $GOPATH/bin/dep ensure
+script:
+  - cd ./cmd/fizzbuzz_go; go test -v
+  - "$HOME/gopath/bin/goveralls -service=travis-ci"
+matrix:
+  allow_failures:
+    - go: tip
+branches:
+  only:
+    - master
+```
+
+### プロジェクトの品質チェック
+- [Go Report Card | Go project code quality report cards](https://goreportcard.com/report/github.com/c18t/sandbox-go-myapp)
+
+上記サイトで確認できる。
