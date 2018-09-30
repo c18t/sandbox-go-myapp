@@ -5,7 +5,7 @@ import (
 	"fmt"
 )
 
-var n *int = flag.Int("n", 100, "request count (default: 100)")
+var n *int = flag.Int("n", 100, "request count")
 
 func main() {
 	flag.Parse()
