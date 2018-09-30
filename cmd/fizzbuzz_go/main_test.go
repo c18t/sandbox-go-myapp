@@ -9,8 +9,8 @@ import (
 var buffer *bytes.Buffer
 
 func init() {
-    buffer = &bytes.Buffer{}
-    writer = buffer
+	buffer = &bytes.Buffer{}
+	writer = buffer
 }
 
 func TestMain(t *testing.T) {

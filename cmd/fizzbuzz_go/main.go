@@ -12,11 +12,11 @@ var n *int = flag.Int("n", 100, "request count")
 var writer io.Writer
 
 func init() {
-    writer = os.Stdout
+	writer = os.Stdout
 }
 
 func fprintln(a ...interface{}) {
-    fmt.Fprintln(writer, a...)
+	fmt.Fprintln(writer, a...)
 }
 
 func main() {

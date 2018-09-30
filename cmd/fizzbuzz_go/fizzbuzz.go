@@ -2,7 +2,7 @@ package main
 
 import "strconv"
 
-// 引数に与えられた数値のFizzBuzzを返却します
+// FizzBuzz: 引数に与えられた数値のFizzBuzzを返却します
 func FizzBuzz(i int) string {
 	if i%15 == 0 {
 		return "FizzBuzz"
