@@ -1,0 +1,17 @@
+{
+  "name": "sandbox-go-myapp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "ssh://git@github.com/c18t/sandbox-go-myapp.git",
+  "author": "鵜巷 <u@chimata.org>",
+  "license": "WTFPL",
+  "scripts": {
+    "doc:install": "gitbook install ./doc",
+    "doc": "gitbook serve ./doc --open",
+    "pdf": "gitbook pdf ./doc ./doc/book.pdf"
+  },
+  "devDependencies": {
+    "canvas": "^1.6.12",
+    "gitbook-cli": "^2.3.2"
+  }
+}
