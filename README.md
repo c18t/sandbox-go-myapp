@@ -4,7 +4,7 @@ golangのアプリケーションプロジェクト作成の練習です
 ## Installation
 ```
 $ go get github.com/c18t/sandbox-go-myapp/cmd/fizzbuzz_go
-$ fizzbuzz_go help
+$ fizzbuzz_go --help
 ```
 
 ## Project Making
